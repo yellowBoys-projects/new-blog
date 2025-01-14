@@ -1,5 +1,6 @@
 import React from "react";
 import AdBanner from "../../assets/ads-700x70.jpg";
+
 function Layout() {
   return (
     <section className="layout-section w-100 border-2 border-black ">

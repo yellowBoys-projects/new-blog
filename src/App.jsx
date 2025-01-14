@@ -1,12 +1,16 @@
 import React from 'react'
 import Layout from './componets/Layout/layout'
-import Logo from './componets/Layout/logo/Logo'
+import Card from './componets/card/card'
+import Homepage from './componets/Home/homepage'
 
 function App() {
   return (
     <div>
       <Layout/>
-      App</div>
+      <Card/>
+  <Homepage/>
+  
+      </div>
   )
 }
 

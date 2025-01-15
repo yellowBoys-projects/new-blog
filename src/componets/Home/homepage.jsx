@@ -1,7 +1,7 @@
 import React from "react";
 import IMg from "../../assets/news-700x435-1.jpg";
 import Img03 from "../../assets/news-300x300-1.jpg";
-
+import Layout from '../Layout/layout.jsx'
 import ImgCard from "../../assets/news-100x100-1.jpg";
 import Categories from "./Categories/categories";
 import Features from "./Features/featurescard";
@@ -13,6 +13,7 @@ import Entertianment from "./Entertainment/Entertianment";
 export default function Homepage() {
   return (
     <div>
+    <Layout/>
       <div className="flex">
         <HomeSlideSmallCard
           img={ImgCard}

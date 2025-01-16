@@ -20,7 +20,7 @@ export default function Homepage() {
     return (
         <div>
             <Layout />
-            <div className="flex border border-black mx-5 my-3 p-5 gap-3">
+            <div className="sm:grid sm:grid-cols-3  sm:justify-between sm:gap-3 sm:mx-5 sm:mt-3">
                 <HomeSlideSmallCard img={ImgCard} alt="" para="lorem ipsum dolor sit amat consec adisplic elit" />
                 <HomeSlideSmallCard img={ImgCard} alt="" para="lorem ipsum dolor sit amat consec adisplic elit" />
                 <HomeSlideSmallCard img={ImgCard} alt="" para="lorem ipsum dolor sit amat consec adisplic elit" />
@@ -35,23 +35,23 @@ function Usefun() {
     return (
         <>
             <section>
-                <div className="border border-black mx-5 my-4 p-5 flex justify-around gap-5 items-center">
-                    <div className=" relative border border-black p-5">
-                        <img src={IMg} alt="...." />
-                        <div className=" absolute bottom-1/4 left-7 border border-black mx-5 p-5">
-                            <p className="text-slate-200"> technology / january 01/01/2025</p>
-                            <h6 className="text-3xl text-slate-200">snactus amet sed amet ipum lorem . Doloret erat elitr sea sed</h6>
+                <div className="sm:flex sm:flex-col sm:my-5 gap-5 items-center">
+                    <div className=" relative ">
+                        <img src={IMg} alt="...." className="w-full" />
+                        <div className=" absolute sm:bottom-1/4 sm:left-5   sm:p-5">
+                            <p className="text-slate-200 "> <span className="text-red-500">technology</span> / january 01/01/2025</p>
+                            <h6 className="sm:text-3xl text-slate-200">snactus amet sed amet ipum lorem . Doloret erat elitr sea sed</h6>
                         </div>
                     </div>
-                    <div className="border border-black p-5">
-                        <h2 className="text-2xl text-center  ">categories</h2>
+                    <div className="sm:mt-10">
+                        <h2 className="sm:text-2xl sm:ml-10 sm:mb-5 uppercase sm:text-center ">categories</h2>
                         <Categories />
                     </div>
                     {/* block */}
                 </div>
                 {/* features block div */}
-                <div className="border border-black mx-5 p-5">
-                    <h2>Features</h2>
+                <div className="">
+                    <h2 className="sm:ml-10 sm:text-2xl sm:mb-5 sm:text-center">Features</h2>
                     <Features />
                 </div>
                 {/* block 03  */}
@@ -91,6 +91,9 @@ function Usefun() {
                 <LATEST_Showpage />
 
                 <BIO_Showpage />
+                 <footer>
+                <p>&copy;Your Site Name. All Rights Reserved. Designed by HTML Codex</p>
+            </footer>{" "}
             </section>
         </>
     );
@@ -99,13 +102,11 @@ function Usefun() {
 function HomeSlideSmallCard(props) {
     return (
         <>
-            <div className="border-2 border-black my-6 flex justify-between items-center gap-5 w-fit p-3">
-                <img src={props.img} alt={props.alt} className="bg-cover object-cover w-fit" />
-                <p>{props.para}</p>
+            <div className=" border border-slate-300  sm:flex sm:flex-col  sm:items-center  w-auto pt-3">
+               <a href=""> <img src={props.img} alt={props.alt} className="object-cover sm:size-20" /></a>
+                <p className="text-center sm:text-sm"><a href="">{props.para}</a></p>
             </div>
-            <footer>
-                <p>&copy;Your Site Name. All Rights Reserved. Designed by HTML Codex</p>
-            </footer>{" "}
+           
         </>
     );
 }

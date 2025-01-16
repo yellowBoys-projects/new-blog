@@ -2,17 +2,12 @@ import React from "react";
 
 export default function Trending() {
     return (
-        <div className="border border-black mx-2 my-3">
-            <div className="   xl:flex justify-between xl:py-3 xl:px-5 ">
-                <h6 className="text-xl text-red-500 border border-black ">trending</h6>
-                <div className="border border-black">
-                    <button className="btn">
-                        <i class="fi fi-rr-angle-small-right"></i>
-                    </button>
-                    <button className="btn"></button>
-                </div>
-                <p className="border border-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sit!</p>
-                <p className="border border-black">Lorem ipsum dolor sit.</p>
+        <div className="sm:px-3 sm:py-5">
+            <div className="sm:flex sm:justify-between  ">
+                <h6 className="sm:text-md text-red-500 font-bold ">trending</h6>
+                <marquee behavior="" direction="" className="ml-6">Please note that news developments are rapidly evolving. For the most current information, consider checking reputable news sources.
+
+</marquee>
             </div>
         </div>
     );

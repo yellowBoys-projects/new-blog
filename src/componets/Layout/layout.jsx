@@ -5,7 +5,7 @@ import Navbar from "./Navbar/Navbar";
 
 function Layout() {
     return (
-        <section className="layout-section w-full border border-black  ">
+        <section className="  layout-section w-full border border-black  ">
             <div className="">
                 <Trending />
                 <Navbar />

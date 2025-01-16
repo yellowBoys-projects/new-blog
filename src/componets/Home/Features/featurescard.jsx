@@ -39,9 +39,9 @@ export default function Features() {
 function FeaturedCard(props){
     return(
         <>
-        <div className=' relative shadow-2xl shadow-slate-50 max-w-60'>
+        <div className='border border-black p5 relative shadow-2xl shadow-slate-50 max-w-60'>
 <img src={props.img} alt={props.alt} className='w-full  ' />
-<div className=' absolute top-2/4'>
+<div className=' border border-black  absolute top-2/4'>
   <p>{props.span}</p>
   <p>{props.title}</p>
 </div>

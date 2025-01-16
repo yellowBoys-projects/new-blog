@@ -4,14 +4,14 @@ import Trending from "./Trending/Trending";
 import Navbar from "./Navbar/Navbar";
 
 function Layout() {
-  return (
-    <section className="layout-section w-full border border-black  ">
-      <div className="">
-        <Trending/>
-<Navbar/>
-      </div>
-    </section>
-  );
+    return (
+        <section className="layout-section w-full border border-black  ">
+            <div className="">
+                <Trending />
+                <Navbar />
+            </div>
+        </section>
+    );
 }
 
 export default Layout;

@@ -1,11 +1,10 @@
 import React from "react";
-import Img from "../../../assets/news-500x280-2.jpg";
-import Img2 from "../../../assets/news-100x100-1.jpg";
+import Img from "../../../assets/news-500x280-5.jpg";
 
 export default function Popular() {
     return (
-        <div className=" ">
-            <div className="mx-5 grid grid-cols-1 gap-3 my-5">
+        <div className=" sm:grid sm:grid-cols-1">
+            <div className="mx-5 grid grid-cols-1 gap-3 my-5 ">
                
                 <BigCard
                     img={Img}
@@ -30,19 +29,19 @@ export default function Popular() {
             </div>
             <div className="m-5">
             <div>
-                <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                <SmallCard img={Img} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
                 
             </div>
             <div className="hidden">
-                <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                <SmallCard img={Img} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
                 
             </div>
             <div className="hidden">
-                <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                <SmallCard img={Img} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
                 
             </div>
             <div className="hidden">
-                <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                <SmallCard img={Img} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
                 
             </div>
             </div>

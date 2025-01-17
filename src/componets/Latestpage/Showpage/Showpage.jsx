@@ -9,8 +9,8 @@ export default function LATEST_Showpage() {
             <div>
                 <Popular />
             </div>
-            <div>
-                <div>
+            <div className="sm:flex  ">
+                <div className="sm:w-3/4">
                     <h2 className="text-xl ml-5">Trending</h2>
                     <div className="m-5 flex flex-col gap-3">
                         
@@ -45,9 +45,12 @@ export default function LATEST_Showpage() {
                     </div>
 
                 </div>
-                <div>
+                <div className="sm:mr-5 ">
                     <h2 className="text-xl ml-5">Tags</h2>
+                    <div className="sm:mt-5">
                     <Taglines />
+                        
+                    </div>
                 </div>
             </div>
         </div>

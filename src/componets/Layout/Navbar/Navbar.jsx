@@ -3,13 +3,13 @@ import AdBannerImg from "../../../assets/ads-700x70.jpg";
 
 export default function Navbar() {
     return (
-        <div className="bg-slate-300 py-3">
-            <nav className="relative flex justify-between items-center px-3">
-                <a href="#" className=" font-bold text-xl ">
+        <div className="bg-slate-300 py-3 sm:py-4 sm:bg-slate-400">
+            <nav className="relative flex justify-between items-center px-3 sm:px-4">
+                <a href="#" className=" font-bold text-xl sm:text-2xl ">
                     <span className="text-red-500 ">news</span>Room
                 </a>
                 <img src={AdBannerImg} alt="..." className=" hidden "/>
-                <button className=""><span><i class="fa-solid fa-bars font-bold mr-3 text-xl"></i></span></button>
+                <button className=""><span><i class="fa-solid fa-bars font-bold mr-3 text-xl sm:text-2xl"></i></span></button>
                 <div className="hidden absolute top-12 bg-indigo-400 right-0 ">
                     <ul className=" flex flex-col justify-center text-center px-10 ">
                         <li>

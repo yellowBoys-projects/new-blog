@@ -6,7 +6,7 @@ export default function Logo() {
             <h2 className="text-2xl py-3">
                 <span className="text-red-500 ">news</span>room
             </h2>
-            <p className="text-xs">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+            <p className="text-xs sm:pr-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
             <div className="py-3">
                 <ul className="grid grid-cols-5 w-20  ">
                     <li>

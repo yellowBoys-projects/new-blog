@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../../../assets/news-500x280-6.jpg";
+import Img from "../../../assets/news-500x280-5.jpg";
 
 export default function Entertianment() {
     return (

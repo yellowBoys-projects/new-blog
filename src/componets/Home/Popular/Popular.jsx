@@ -4,8 +4,9 @@ import Img2 from "../../../assets/news-100x100-1.jpg";
 
 export default function Popular() {
     return (
-        <div className="border border-black my-5 mx-5 w-1/2 p-5 ">
-            <div className="border border-black p-5 flex gap-5 justify-around  ">
+        <div className=" ">
+            <div className="mx-5 grid grid-cols-1 gap-3 my-5">
+               
                 <BigCard
                     img={Img}
                     alt="technology"
@@ -14,6 +15,8 @@ export default function Popular() {
                     title="est stet amet ipsum stet clita rebum duo"
                     para="Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit"
                 />
+               <div className="hidden">
+                   
                 <BigCard
                     img={Img}
                     alt="technology"
@@ -22,12 +25,26 @@ export default function Popular() {
                     title="est stet amet ipsum stet clita rebum duo"
                     para="Rebum dolore duo et vero ipsum clita, est ea sed duo diam ipsum, clita at justo, lorem amet vero eos sed sit"
                 />
+               </div>
+
             </div>
-            <div className="p-5 border border-black grid grid-cols-2 my-5 mx-5 w-11/12 gap-5">
+            <div className="m-5">
+            <div>
                 <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                
+            </div>
+            <div className="hidden">
                 <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                
+            </div>
+            <div className="hidden">
                 <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                
+            </div>
+            <div className="hidden">
                 <SmallCard img={Img2} alt="techology" trend="technology" date="january 01,2025" title="lorem ispum dolor sit amet consec adipis elit" />
+                
+            </div>
             </div>
         </div>
     );
@@ -35,15 +52,15 @@ export default function Popular() {
 
 function BigCard(props) {
     return (
-        <div className="">
+        <div className="ring-2 ">
             <img src={props.img} alt={props.alt} className="" />
-            <div>
-                <p>
+            <div className="p-3">
+                <p className="text-xs py-3">
                     <span>{props.trend}</span>
                     {props.date}
                 </p>
-                <h2>{props.title}</h2>
-                <p>{props.para}</p>
+                <h2 className="text-md">{props.title}</h2>
+                <p className="text-sm">{props.para}</p>
             </div>
         </div>
     );
@@ -52,15 +69,15 @@ function BigCard(props) {
 export function SmallCard(props) {
     return (
         <>
-            <div className="flex items-center gap-5 w-full border border-black p-1">
+            <div className="flex items-center gap-5 w-full ring-2 p-2">
                 <div>
                     <img src={props.img} alt={props.alt} className="" />
                 </div>
                 <div>
-                    <p>
+                    <p className="text-xs">
                         <span>{props.trend}</span> / {props.date}
                     </p>
-                    <h4>{props.title}</h4>
+                    <h4 className="text-md">{props.title}</h4>
                 </div>
             </div>
         </>

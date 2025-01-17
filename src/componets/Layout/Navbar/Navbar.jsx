@@ -1,34 +1,35 @@
 import React from "react";
 import AdBannerImg from "../../../assets/ads-700x70.jpg";
+
 export default function Navbar() {
     return (
-        <div className="">
-            <nav className=" sm:grid sm:grid-cols-2 sm:justify-between items-center bg-red-500 sm:py-5 sm:px-3">
-                <a href="#" className="sm:text-2xl ml-5 font-bold  ">
-                    <span className="xs:bg-black    md:bg-red-500 lg:bg-sky-500 xl:bg-amber-500 2xl:bg-cyan-500 font-bold ">news</span>Room
+        <div className="bg-slate-300 py-3">
+            <nav className="relative flex justify-between items-center px-3">
+                <a href="#" className=" font-bold text-xl ">
+                    <span className="text-red-500 ">news</span>Room
                 </a>
-                <img src={AdBannerImg} alt="..." className="order-2 sm:hidden  "/>
-                <button className="">button</button>
-                <div className="sm:flex sm:flex-col  col-span-2 sm:hidden ">
-                    <ul className="sm:flex sm:flex-col gap-3   ">
+                <img src={AdBannerImg} alt="..." className=" hidden "/>
+                <button className=""><span><i class="fa-solid fa-bars font-bold mr-3 text-xl"></i></span></button>
+                <div className="hidden absolute top-12 bg-indigo-400 right-0 ">
+                    <ul className=" flex flex-col justify-center text-center px-10 ">
                         <li>
-                            <a href="#">home</a>
+                            <a href="#" className="text-lg hover:border-b-2 border-green-700 text-white">home</a>
                         </li>
                         <li>
-                            <a href="#">home</a>
+                            <a href="#" className="text-lg hover:border-b-2 border-green-700 text-white">home</a>
                         </li>
                         <li>
-                            <a href="#">home</a>
+                            <a href="#" className="text-lg hover:border-b-2 border-green-700 text-white">home</a>
                         </li>
                         <li>
-                            <a href="#">home</a>
+                            <a href="#" className="text-lg hover:border-b-2 border-green-700 text-white">home</a>
                         </li>
                         <li>
-                            <a href="#">home</a>
+                            <a href="#" className="text-lg hover:border-b-2 border-green-700 text-white">home</a>
                         </li>
                     </ul>
-                    <div>
-                        <form action="" className="border border-black">
+                    <div className="hidden">
+                        <form action="" className="">
                             <input type="text" placeholder="keyword" />
                             <span>search</span>
                         </form>

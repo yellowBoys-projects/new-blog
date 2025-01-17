@@ -4,7 +4,7 @@ import CategoriesIMg from "../../../assets/cat-500x80-1.jpg";
 
 export default function Categories() {
     return (
-        <div className="sm:grid sm:grid-cols-3 sm:gap-3 ">
+        <div className="grid grid-cols-1 gap-3 mx-3 ">
             <CategoriesCard img={CategoriesIMg} alt="" span="lorem welcome the in " />
             <CategoriesCard img={CategoriesIMg} alt="" span="lorem welcome the in " />
             <CategoriesCard img={CategoriesIMg} alt="" span="lorem welcome the in " />
@@ -15,9 +15,9 @@ export default function Categories() {
 function CategoriesCard(props) {
     return (
         <>
-            <div className="sm:static relative border border-slate-300 p-5">
+            <div className="border border-slate-300 p-3">
                 <img src={props.img} alt={props.img} className="sm:w-fit object-cover sm:h-10" />
-                <span className="sm:static sm:text-md sm:text-center font-bold">{props.span}</span>
+                <span className="text-md ">{props.span}</span>
             </div>
         </>
     );

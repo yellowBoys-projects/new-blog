@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Links() {
     return (
-        <div className="border border-black">
-            <h2 className="text-3xl"> Quick Links</h2>
-            <div className="flex flex-col">
+        <div className="">
+            <h2 className="text-2xl"> Quick Links</h2>
+            <div className="grid grid-cols-3 p-2">
                 <a href="">About</a>
                 <a href="">About</a>
                 <a href="">About</a>

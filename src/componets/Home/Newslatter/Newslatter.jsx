@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Newslatter() {
     return (
-        <div className="border border-black my-5 p-5 max-w-96 text-center justify-center">
-            <h2>Newslatter</h2>
-            <p>Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
-            <form action="" className="border border-black p-5">
+        <div className="ring-2 p-3 m-5">
+            <h2 className="text-md">Newslatter</h2>
+            <p className="text-sm py-2">Aliqu justo et labore at eirmod justo sea erat diam dolor diam vero kasd</p>
+            <form action="" className="ring-2  p-2">
                 <input type="text" placeholder="Your Email" className="border border-black" />
-                <button>Sign up</button>
-                <p>sit eirmod nonumy ksdk eird sk</p>
+                <button className="text-md ring-2">Sign up</button>
+                <p className="text-xs py-2">please contact for form  filed </p>
             </form>
 
             <div>

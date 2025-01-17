@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Categories() {
     return (
-        <div className="border border-black">
-            <h2 className="text-5xl">categories</h2>
-            <ul className="text-center border border-black p-5 my-5">
+        <div className="">
+            <h2 className="text-2xl py-3">categories</h2>
+            <ul className=" grid grid-cols-3 p-2">
                 <li>
                     <a href="">Home</a>
                 </li>

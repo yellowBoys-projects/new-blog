@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Tags() {
     return (
-        <div className="border border-black">
-            <h2 className="text-3xl">Tags</h2>
-            <ul className="text-center">
+        <div className="">
+            <h2 className="text-2xl">Tags</h2>
+            <ul className="text-center grid grid-cols-3">
                 <li>
                     <a href=""> Home</a>
                 </li>
